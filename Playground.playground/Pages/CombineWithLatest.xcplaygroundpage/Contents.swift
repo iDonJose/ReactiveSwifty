@@ -5,7 +5,7 @@
  */
 
 import ReactiveSwift
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 
 
 /// A stream of unread mails count that increase over time

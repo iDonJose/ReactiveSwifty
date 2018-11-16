@@ -5,7 +5,7 @@
  */
 
 import ReactiveSwift
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 import Result
 
 

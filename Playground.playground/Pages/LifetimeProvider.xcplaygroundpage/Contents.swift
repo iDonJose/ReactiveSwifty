@@ -3,7 +3,7 @@
  Adds a `Lifetime` property to an object which in turn helps to observe object deinitialization.
  */
 
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 
 
 

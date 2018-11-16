@@ -5,7 +5,7 @@
  */
 
 import ReactiveSwift
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 
 
 /// Stream of inputs
@@ -23,7 +23,7 @@ inputs.map(value: "Constant")
  */
 
 import ReactiveSwift
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 
 /* Uncomment to use
 inputs.mapVoid()

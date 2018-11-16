@@ -6,7 +6,7 @@
  */
 
 import ReactiveSwift
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 
 
 /// Filter condition

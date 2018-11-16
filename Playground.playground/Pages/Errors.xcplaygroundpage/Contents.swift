@@ -4,7 +4,7 @@
  > Method exists for both Signal & SignalProducer.
  */
 
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 import ReactiveSwift
 import Result
 

@@ -4,7 +4,7 @@
  > Method exists for MutableProperty<Bool> & MutableProperty<Bool?>.
  */
 
-import ReactiveSwifty_iOS
+import ReactiveSwifty
 import ReactiveSwift
 import Result
 

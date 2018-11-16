@@ -12,7 +12,7 @@
 		825DCF7B219E5FA700B1F103 /* Ping_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825DCF7A219E5FA700B1F103 /* Ping_Spec.swift */; };
 		825DCF7D219E654800B1F103 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825DCF7C219E654800B1F103 /* Values.swift */; };
 		825DCF7F219E6CA400B1F103 /* Values_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825DCF7E219E6CA400B1F103 /* Values_Spec.swift */; };
-		8267FF1421975185000F61DA /* ReactiveSwifty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8267FF0B21975185000F61DA /* ReactiveSwifty_iOS.framework */; };
+		8267FF1421975185000F61DA /* ReactiveSwifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8267FF0B21975185000F61DA /* ReactiveSwifty.framework */; };
 		8267FF2A2197597F000F61DA /* LifetimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FF292197597F000F61DA /* LifetimeProvider.swift */; };
 		8267FF2D21975BBE000F61DA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FF2C21975BBE000F61DA /* Binding.swift */; };
 		8267FF3221975E6D000F61DA /* Binding_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FF3021975D87000F61DA /* Binding_Spec.swift */; };
@@ -67,8 +67,8 @@
 		8267FEEF21975028000F61DA /* ReactiveSwifty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveSwifty.h; sourceTree = "<group>"; };
 		8267FEF021975028000F61DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8267FEFC21975028000F61DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8267FF0B21975185000F61DA /* ReactiveSwifty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveSwifty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8267FF1321975185000F61DA /* ReactiveSwifty-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveSwifty-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8267FF0B21975185000F61DA /* ReactiveSwifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveSwifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8267FF1321975185000F61DA /* ReactiveSwifty-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveSwifty-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8267FF24219752F1000F61DA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8267FF2521975313000F61DA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8267FF2621975378000F61DA /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8267FF1421975185000F61DA /* ReactiveSwifty_iOS.framework in Frameworks */,
+				8267FF1421975185000F61DA /* ReactiveSwifty.framework in Frameworks */,
 				915B672D101EEED88AD82137 /* Pods_ReactiveSwifty_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,8 +155,8 @@
 		8267FEED21975028000F61DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8267FF0B21975185000F61DA /* ReactiveSwifty_iOS.framework */,
-				8267FF1321975185000F61DA /* ReactiveSwifty-iOSTests.xctest */,
+				8267FF0B21975185000F61DA /* ReactiveSwifty.framework */,
+				8267FF1321975185000F61DA /* ReactiveSwifty-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 			);
 			name = "ReactiveSwifty-iOS";
 			productName = "ReactiveSwifty-iOS";
-			productReference = 8267FF0B21975185000F61DA /* ReactiveSwifty_iOS.framework */;
+			productReference = 8267FF0B21975185000F61DA /* ReactiveSwifty.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8267FF1221975185000F61DA /* ReactiveSwifty-iOSTests */ = {
@@ -334,7 +334,7 @@
 			);
 			name = "ReactiveSwifty-iOSTests";
 			productName = "ReactiveSwifty-iOSTests";
-			productReference = 8267FF1321975185000F61DA /* ReactiveSwifty-iOSTests.xctest */;
+			productReference = 8267FF1321975185000F61DA /* ReactiveSwifty-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -674,7 +674,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-Xfrontend\" \"-warn-long-function-bodies=100\" \"-Xfrontend\" \"-warn-long-expression-type-checking=100\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iDonJose.ReactiveSwifty-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ReactiveSwifty;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -704,7 +704,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-Xfrontend\" \"-warn-long-function-bodies=100\" \"-Xfrontend\" \"-warn-long-expression-type-checking=100\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iDonJose.ReactiveSwifty-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ReactiveSwifty;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -724,7 +724,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idonjose.ReactiveSwifty-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveSwifty-Tests";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -743,7 +743,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idonjose.ReactiveSwifty-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveSwifty-Tests";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
