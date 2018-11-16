@@ -6,10 +6,10 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-@testable import ReactiveSwifty_iOS
 import Nimble
 import Quick
 import ReactiveSwift
+@testable import ReactiveSwifty_iOS
 import Result
 
 
@@ -37,7 +37,7 @@ class Retry_Spec: QuickSpec {
                 else {
 
                     failCount += 1
-                    
+
                     let error = NSError(domain: "", code: 0, userInfo: nil)
                     scheduler.schedule(after: .seconds(1)) { observer.send(error: error) }
                 }
@@ -52,7 +52,7 @@ class Retry_Spec: QuickSpec {
 
 
         describe("SignalProducer") {
-            
+
             describe("`retry(every:on:)`") {
                 it("retries on failure") {
 
@@ -63,7 +63,7 @@ class Retry_Spec: QuickSpec {
                             case let .success(value): observeEvents.append("V\(value)")
                             case .failure: observeEvents.append("F")
                             }
-                    }
+                        }
 
                     scheduler.run()
 

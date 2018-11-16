@@ -6,10 +6,10 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-@testable import ReactiveSwifty_iOS
 import Nimble
 import Quick
 import ReactiveSwift
+@testable import ReactiveSwifty_iOS
 import Result
 
 
@@ -91,7 +91,7 @@ class CombineWithLatest_Spec: QuickSpec {
                             .observeValues {
                                 observeValue_1 = $0.0
                                 observeValue_2 = $0.1
-                        }
+                            }
 
                     }
                 }
@@ -103,7 +103,7 @@ class CombineWithLatest_Spec: QuickSpec {
                             .observeValues {
                                 observeValue_1 = $0.0
                                 observeValue_2 = $0.1
-                        }
+                            }
 
                     }
                 }

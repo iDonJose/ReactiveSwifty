@@ -6,10 +6,10 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-@testable import ReactiveSwifty_iOS
 import Nimble
 import Quick
 import ReactiveSwift
+@testable import ReactiveSwifty_iOS
 import Result
 
 

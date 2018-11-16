@@ -20,7 +20,7 @@ extension MutableProperty where Value == () {
 
 }
 
-extension MutableProperty where Value == Optional<()> {
+extension MutableProperty where Value == ()? {
 
     /// Pings.
     public func ping() {

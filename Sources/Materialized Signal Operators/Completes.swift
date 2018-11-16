@@ -33,4 +33,3 @@ extension SignalProducerProtocol where Value: EventProtocol, Error == NoError {
     }
 
 }
-

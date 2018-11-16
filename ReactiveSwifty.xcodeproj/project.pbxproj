@@ -302,6 +302,7 @@
 			buildConfigurationList = 8267FF1C21975185000F61DA /* Build configuration list for PBXNativeTarget "ReactiveSwifty-iOS" */;
 			buildPhases = (
 				B71C252695CCD1F589E87B50 /* [CP] Check Pods Manifest.lock */,
+				825DCF84219EBD2600B1F103 /* SwiftLint */,
 				8267FF0621975185000F61DA /* Headers */,
 				8267FF0721975185000F61DA /* Sources */,
 				8267FF0821975185000F61DA /* Frameworks */,
@@ -414,6 +415,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveSwifty-iOSTests/Pods-ReactiveSwifty-iOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		825DCF84219EBD2600B1F103 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
 		};
 		B71C252695CCD1F589E87B50 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

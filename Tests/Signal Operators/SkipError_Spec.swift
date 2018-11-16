@@ -6,10 +6,10 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-@testable import ReactiveSwifty_iOS
 import Nimble
 import Quick
 import ReactiveSwift
+@testable import ReactiveSwifty_iOS
 import Result
 
 
@@ -35,7 +35,7 @@ class SkipError_Spec: QuickSpec {
 
             let error = NSError(domain: "", code: 0, userInfo: nil)
 
-            scheduler.schedule() {
+            scheduler.schedule {
                 observer.send(value: 1)
                 observer.send(value: 2)
                 observer.send(error: error)

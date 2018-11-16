@@ -35,5 +35,5 @@ extension SignalProducerProtocol where Value: EventProtocol, Error == NoError {
     public func values() -> SignalProducer<Value.Value, NoError> {
         return producer.lift { $0.values() }
     }
-    
+
 }

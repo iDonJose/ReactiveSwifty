@@ -29,7 +29,7 @@ extension MutableProperty where Value == Bool {
 
 }
 
-extension MutableProperty where Value == Optional<Bool> {
+extension MutableProperty where Value == Bool? {
 
     /// Toggles value.
     ///

@@ -6,17 +6,17 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-@testable import ReactiveSwifty_iOS
 import Nimble
 import Quick
 import ReactiveSwift
+@testable import ReactiveSwifty_iOS
 import Result
 
 
 
 class ConcatMap_Spec: QuickSpec {
     override func spec() {
-        
+
         var signal: Signal<String, NoError>!
         var observer: Signal<String, NoError>.Observer!
         var observeValues: [String]!
@@ -106,6 +106,6 @@ class ConcatMap_Spec: QuickSpec {
 
             }
         }
-        
+
     }
 }
