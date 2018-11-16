@@ -63,6 +63,7 @@
 		825DCF7E219E6CA400B1F103 /* Values_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values_Spec.swift; sourceTree = "<group>"; };
 		825DCF80219E70CF00B1F103 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		825DCF81219E70D600B1F103 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		825DCF83219EA6C300B1F103 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8267FEEF21975028000F61DA /* ReactiveSwifty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveSwifty.h; sourceTree = "<group>"; };
 		8267FEF021975028000F61DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8267FEFC21975028000F61DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 			children = (
 				8267FF24219752F1000F61DA /* .gitignore */,
 				8267FF2621975378000F61DA /* .swift-version */,
+				825DCF83219EA6C300B1F103 /* .swiftlint.yml */,
 				8267FF2521975313000F61DA /* Podfile */,
 				8267FF272197585E000F61DA /* Podfile.lock */,
 				8267FF702198E988000F61DA /* ReactiveSwifty.podspec */,
@@ -692,7 +694,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 265D7B570A422816C99468AD /* Pods-ReactiveSwifty-iOSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -712,7 +713,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98031A09842BCE0AF7DB96FE /* Pods-ReactiveSwifty-iOSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;

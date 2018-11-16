@@ -4,11 +4,13 @@ PODS:
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.0.0)
+  - SwiftLint (0.28.0)
 
 DEPENDENCIES:
   - Nimble (~> 7.3)
   - Quick (~> 1.3)
   - ReactiveSwift (~> 4.0)
+  - SwiftLint (~> 0.28)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - Quick
     - ReactiveSwift
     - Result
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SwiftLint: 088cfacb75b45970017e62b7524d506776d60148
 
-PODFILE CHECKSUM: e9aff12bbf665e1a65cbde7e4a3529a44d8395f7
+PODFILE CHECKSUM: 47de2a64f715ca8525bf3a970fb88351872180f0
 
 COCOAPODS: 1.5.3

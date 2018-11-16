@@ -9,6 +9,9 @@ def pods
 
   pod 'ReactiveSwift', '~> 4.0'
 
+  # Linting
+  pod 'SwiftLint', '~> 0.28'
+
 end
 
 def test_pods
