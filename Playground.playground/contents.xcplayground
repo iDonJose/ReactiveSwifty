@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Summary'/>
+        <page name='Ping'/>
+        <page name='Toggle'/>
+        <page name='CombineWithLatest'/>
+        <page name='ConcatMap'/>
+        <page name='FilterWithLatest'/>
+        <page name='Map'/>
+        <page name='MergeMap'/>
+        <page name='Retry'/>
+        <page name='SkipError'/>
+        <page name='SpaceOut'/>
+        <page name='SwitchMap'/>
+        <page name='Completes'/>
+        <page name='Errors'/>
+        <page name='Values'/>
+        <page name='Binding'/>
+        <page name='LifetimeProvider'/>
+    </pages>
+</playground>
