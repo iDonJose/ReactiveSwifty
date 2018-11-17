@@ -27,7 +27,7 @@ Jump to the included Playground to get a quick hint of what this framework can d
  1. Install pods with `$ pod install`
  1. Open `ReactiveSwifty.xcworkspace`
  1. Build `ReactiveSwifty-iOS` scheme with an iOS Simulator
- 1. Open `ReactiveSwifty.playground`
+ 1. Open `Playground.playground`
  1. Run Playground !
 
 
