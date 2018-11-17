@@ -64,6 +64,9 @@ To add *ReactiveSwifty* to your project manually, download the source code and p
 ## ✍️ Authors
 *ReactiveSwifty* was created and is still maintained by [José Donor](donor.develop@gmail.com).
 
+## 👏 Greetings
+*ReactiveSwifty* was made possible thanks to :
+- [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)
 
 ## 📃 License
 *ReactiveSwifty* is released under an Apache 2.0 license. See [License](https://github.com/idonjose/ReactiveSwifty/blob/master/LICENSE) for more information.
