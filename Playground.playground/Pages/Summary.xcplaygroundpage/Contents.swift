@@ -1,9 +1,9 @@
 /*:
  > **Start Up**
  > 1. Install Pod depencies by running `$ pod install`
- > 1. Open `ReactiveSwift.xcworkspace`
- > 1. Build `ReactiveSwift-iOS` scheme with an iOS Simulator
- > 1. Open the `ReactiveSwift.playground`
+ > 1. Open `ReactiveSwifty.xcworkspace`
+ > 1. Build `ReactiveSwifty-iOS` scheme with an iOS Simulator
+ > 1. Open the `Playground.playground`
  > 1. Run Playground !
 
  ***
