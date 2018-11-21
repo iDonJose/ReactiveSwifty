@@ -9,7 +9,7 @@
 import Nimble
 import Quick
 import ReactiveSwift
-@testable import ReactiveSwifty_iOS
+@testable import ReactiveSwifty
 import Result
 
 
