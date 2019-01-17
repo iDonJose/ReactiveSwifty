@@ -1,6 +1,6 @@
 # ReactiveSwifty
 
-> `ReactiveSwifty` adds handy methods derived of dayly use of the awesome [`ReactiveSwift`](https://github.com/ReactiveCocoa/ReactiveSwift) framework in concrete projects.
+Overloads  [`ReactiveSwift`](https://github.com/ReactiveCocoa/ReactiveSwift)  for better streaming of values, allowing for high productivity.
 <p align="center">
 	<a href="https://swift.org">
         <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" />
