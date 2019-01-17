@@ -9,7 +9,7 @@
  ***
 
  # ReactiveSwifty
- `ReactiveSwifty` adds handy methods derived of dayly use of the awesome `ReactiveSwift` framework in concrete projects.
+ Enhances streams of values provided by ReactiveSwift
 
  ### Summary
 
