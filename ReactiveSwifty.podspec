@@ -5,17 +5,17 @@
 Pod::Spec.new do |s|
 
     s.name         = "ReactiveSwifty"
-    s.version      = "1.0.0"
-    s.summary      = "ReactiveSwift with handy new methods"
+    s.version      = "1.0.1"
+    s.summary      = "Enhances streams of values provided by ReactiveSwift"
     s.description  = <<-DESC
-                        `ReactiveSwifty` adds handy methods derived of dayly use of the awesome `ReactiveSwift` framework in concrete projects.
+                        Overloads `ReactiveSwift` for better streaming of values, allowing for high productivity.
                         DESC
     s.homepage     = "https://github.com/iDonJose/ReactiveSwifty"
     s.source       = { :git => "https://github.com/iDonJose/ReactiveSwifty.git", :tag => "#{s.version}" }
 
     s.license      = { :type => "Apache 2.0", :file => "LICENSE" }
 
-    s.author            = { "iDonJose" => "donor.develop@gmail.com" }
+    s.author       = { "iDonJose" => "donor.develop@gmail.com" }
 
 
     s.ios.deployment_target = "8.0"
