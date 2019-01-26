@@ -13,6 +13,9 @@
 
  ### Summary
 
+ **Properties**
+ - [`ActionProperty`](ActionProperty) : A mutable property with no default value
+
  **Property Operators**
  - [`ping()`](Ping) : Pings a MutableProperty
  - [`toggle()`](Toggle) : Toggles a MutableProperty of Bool
