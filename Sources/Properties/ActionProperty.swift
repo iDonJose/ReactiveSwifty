@@ -36,6 +36,16 @@ public final class ActionProperty<Value> {
         self.property = Property(property)
     }
 
+    /// Initializes a composed property which reflects the given property.
+    ///
+    /// - note: The resulting property does not retain the given property.
+    ///
+    /// - parameters:
+    ///   - property: A property to be wrapped.
+    public convenience init(_ property: MutableActionProperty<Value>) {
+        self.init(producer: property.producer)
+    }
+
     /// Initializes a composed property that first takes on `initial`, then each
     /// value sent on a signal created by `producer`.
     ///
@@ -52,10 +62,32 @@ public final class ActionProperty<Value> {
     /// - parameters:
     ///   - producer: A producer that will start immediately and send values to
     ///             the property.
+    public convenience init(producer: SignalProducer<Value, NoError>) {
+        self.init(producer: producer)
+    }
+
+    /// Initializes a composed property that first takes on `initial`, then each
+    /// value sent on a signal created by `producer`.
+    ///
+    /// - parameters:
+    ///   - producer: A producer that will start immediately and send values to
+    ///             the property.
     public convenience init<Producer: SignalProducerConvertible>(producer: Producer)
         where Producer.Value == Value?, Producer.Error == NoError {
 
-        self.init(producer: producer.producer)
+            self.init(producer: producer.producer)
+    }
+
+    /// Initializes a composed property that first takes on `initial`, then each
+    /// value sent on a signal created by `producer`.
+    ///
+    /// - parameters:
+    ///   - producer: A producer that will start immediately and send values to
+    ///             the property.
+    public convenience init<Producer: SignalProducerConvertible>(producer: Producer)
+        where Producer.Value == Value, Producer.Error == NoError {
+
+            self.init(producer: producer.producer)
     }
 
 
