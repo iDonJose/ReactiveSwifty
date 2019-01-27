@@ -14,6 +14,7 @@
  ### Summary
 
  **Properties**
+ - [`ActionProperty`](ActionProperty) : A read-only property with no default value
  - [`MutableActionProperty`](MutableActionProperty) : A mutable property with no default value
 
  **Property Operators**
