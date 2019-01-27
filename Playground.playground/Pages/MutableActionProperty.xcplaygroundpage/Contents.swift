@@ -1,5 +1,5 @@
 /*:
- ## `ActionProperty`
+ ## `MutableActionProperty`
  A mutable property with no default value.
  To use like an action trigger.
  */
@@ -8,8 +8,8 @@ import ReactiveSwift
 import ReactiveSwifty
 
 
-/// Action property
-let actionProperty = ActionProperty<Int>()
+/// Mutable action property
+let actionProperty = MutableActionProperty<Int>()
 
 /// Initial value
 let initialValue = actionProperty.value

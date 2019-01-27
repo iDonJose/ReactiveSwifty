@@ -41,7 +41,7 @@
 		82AB2B67219E4E6000987CCB /* CombineWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B66219E4E6000987CCB /* CombineWith.swift */; };
 		82AB2B69219E5AA200987CCB /* SkipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B68219E5AA200987CCB /* SkipError.swift */; };
 		82AB2B6B219E5B8900987CCB /* SkipError_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B6A219E5B8900987CCB /* SkipError_Spec.swift */; };
-		82DEA54F21FD0BBA00CA6514 /* ActionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DEA54E21FD0BBA00CA6514 /* ActionProperty.swift */; };
+		82DEA54F21FD0BBA00CA6514 /* MutableActionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DEA54E21FD0BBA00CA6514 /* MutableActionProperty.swift */; };
 		915B672D101EEED88AD82137 /* Pods_ReactiveSwifty_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CFEA987BFADCE581878ED1 /* Pods_ReactiveSwifty_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +104,7 @@
 		82AB2B66219E4E6000987CCB /* CombineWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineWith.swift; sourceTree = "<group>"; };
 		82AB2B68219E5AA200987CCB /* SkipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipError.swift; sourceTree = "<group>"; };
 		82AB2B6A219E5B8900987CCB /* SkipError_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipError_Spec.swift; sourceTree = "<group>"; };
-		82DEA54E21FD0BBA00CA6514 /* ActionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProperty.swift; sourceTree = "<group>"; };
+		82DEA54E21FD0BBA00CA6514 /* MutableActionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableActionProperty.swift; sourceTree = "<group>"; };
 		98031A09842BCE0AF7DB96FE /* Pods-ReactiveSwifty-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwifty-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwifty-iOSTests/Pods-ReactiveSwifty-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B9CFEA987BFADCE581878ED1 /* Pods_ReactiveSwifty_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwifty_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EB67B7F3B5A3B93797C8AA /* Pods-ReactiveSwifty-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwifty-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwifty-iOS/Pods-ReactiveSwifty-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 		82DEA54D21FD0ACF00CA6514 /* Properties */ = {
 			isa = PBXGroup;
 			children = (
-				82DEA54E21FD0BBA00CA6514 /* ActionProperty.swift */,
+				82DEA54E21FD0BBA00CA6514 /* MutableActionProperty.swift */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -432,13 +432,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftLint;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +500,7 @@
 				8267FF45219794BE000F61DA /* FilterWithLatest.swift in Sources */,
 				8267FF4A21979C8E000F61DA /* Map.swift in Sources */,
 				8267FF2D21975BBE000F61DA /* Binding.swift in Sources */,
-				82DEA54F21FD0BBA00CA6514 /* ActionProperty.swift in Sources */,
+				82DEA54F21FD0BBA00CA6514 /* MutableActionProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
     <pages>
         <page name='Summary'/>
-        <page name='ActionProperty'/>
+        <page name='MutableActionProperty'/>
         <page name='Ping'/>
         <page name='Toggle'/>
         <page name='CombineWithLatest'/>

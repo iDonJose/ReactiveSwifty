@@ -1,5 +1,5 @@
 //
-//  ActionProperty.swift
+//  MutableActionProperty.swift
 //  ReactiveSwifty-iOS
 //
 //  Created by José Donor on 26/01/2019.
@@ -17,7 +17,7 @@ import Result
 /// there is no action triggered at creation.
 ///
 /// Instances of this class are thread-safe.
-public final class ActionProperty<Value>: BindingTargetProvider {
+public final class MutableActionProperty<Value>: BindingTargetProvider {
 
     /// Underlying property
     private let property = MutableProperty<Value?>(nil)
@@ -72,6 +72,7 @@ public final class ActionProperty<Value>: BindingTargetProvider {
     /// Resets property to have no value.
     ///
     /// - Returns: Previous value.
+    @discardableResult
     public func reset() -> Value? {
         return property.swap(nil)
     }
