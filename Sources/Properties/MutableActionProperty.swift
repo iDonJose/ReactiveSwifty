@@ -85,9 +85,8 @@ public final class MutableActionProperty<Value>: BindingTargetProvider {
     ///
     /// - returns: The previous property value.
     @discardableResult
-    public func swap(_ newValue: Value,
-                     default value: Value) -> Value? {
-        return modify(default: value) { value in
+    public func swap(_ newValue: Value) -> Value? {
+        return modify { value in
             defer { value = newValue }
             return value
         }
@@ -103,12 +102,8 @@ public final class MutableActionProperty<Value>: BindingTargetProvider {
     ///
     /// - Important : If there is no initial value, result will be nil.
     @discardableResult
-    public func modify<Result>(default value: Value,
-                               _ action: (inout Value) throws -> Result) rethrows -> Result? {
-        return try property.modify {
-            if $0 == nil { $0 = value; return nil }
-            else { return try action(&$0!) }
-        }
+    public func modify<Result>(_ action: (inout Value?) throws -> Result) rethrows -> Result {
+        return try property.modify { try action(&$0) }
     }
 
     /// Atomically performs an arbitrary action using the current value of the
@@ -121,11 +116,8 @@ public final class MutableActionProperty<Value>: BindingTargetProvider {
     ///
     /// - Important : If there is no initial value, action closure won't be executed and returned value will be nil.
     @discardableResult
-    public func withValue<Result>(_ action: (Value) throws -> Result) rethrows -> Result? {
-        return try property.withValue {
-            if $0 == nil { return nil }
-            else { return try action($0!) }
-        }
+    public func withValue<Result>(_ action: (Value?) throws -> Result) rethrows -> Result {
+        return try property.withValue { try action($0!) }
     }
 
 }

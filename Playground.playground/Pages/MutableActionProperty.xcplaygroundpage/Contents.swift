@@ -17,8 +17,8 @@ let initialValue = actionProperty.value
 actionProperty.producer
     .startWithValues { print("Values : \($0)") }
 
-actionProperty.swap(10, default: 20)
-actionProperty.modify(default: 5) { $0 = $0 * 3 }
+actionProperty.swap(10)
+actionProperty.modify { $0 = $0! * 3 }
 
 /// Clears current value
 actionProperty.reset()
