@@ -46,3 +46,23 @@ extension MutableProperty where Value == Bool? {
     }
 
 }
+
+
+extension MutableActionProperty where Value == Bool {
+
+    /// Toggles value.
+    ///
+    /// - Returns: The previous value.
+    @discardableResult
+    public func toggle(default value: Bool) -> Bool? {
+
+        return modify {
+            let oldValue = $0
+            $0 = $0 != nil
+                ? !$0! : value
+            return oldValue
+        }
+
+    }
+
+}

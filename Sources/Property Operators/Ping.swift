@@ -28,3 +28,13 @@ extension MutableProperty where Value == ()? {
     }
 
 }
+
+
+extension MutableActionProperty where Value == () {
+
+    /// Pings.
+    public func ping() {
+        swap(())
+    }
+
+}
