@@ -17,7 +17,7 @@ import Result
 /// there is no action triggered at creation.
 ///
 /// Instances of this class are thread-safe.
-public final class MutableActionProperty<Value>: BindingTargetProvider {
+public final class MutableActionProperty<Value>: BindingSource, BindingTargetProvider {
 
     /// Underlying property
     private let property = MutableProperty<Value?>(nil)

@@ -17,7 +17,7 @@ import Result
 /// there is no action triggered at creation.
 ///
 /// Instances of this class are thread-safe.
-public final class ActionProperty<Value> {
+public final class ActionProperty<Value>: BindingSource {
 
     /// Underlying property
     private let property: Property<Value?>
@@ -63,7 +63,7 @@ public final class ActionProperty<Value> {
     ///   - producer: A producer that will start immediately and send values to
     ///             the property.
     public convenience init(producer: SignalProducer<Value, NoError>) {
-        self.init(producer: producer)
+        self.init(producer: producer.map { $0 as Value? })
     }
 
     /// Initializes a composed property that first takes on `initial`, then each
