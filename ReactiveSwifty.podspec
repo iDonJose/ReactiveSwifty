@@ -1,11 +1,11 @@
-#  Validate Podspec by running 'pod spec lint <Framework>.podspec'
+#  Validate Podspec by running 'pod spec lint CollectionXL.podspec'
 #  Podspec attributes : http://docs.cocoapods.org/specification.html
 #  Podspecs examples : https://github.com/CocoaPods/Specs/
 
 Pod::Spec.new do |s|
 
     s.name         = "ReactiveSwifty"
-    s.version      = "1.0.1"
+    s.version      = "1.1.0"
     s.summary      = "Enhances streams of values provided by ReactiveSwift"
     s.description  = <<-DESC
                         Overloads `ReactiveSwift` for better streaming of values, allowing for high productivity.
