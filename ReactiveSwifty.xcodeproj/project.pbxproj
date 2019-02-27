@@ -42,6 +42,7 @@
 		82AB2B67219E4E6000987CCB /* CombineWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B66219E4E6000987CCB /* CombineWith.swift */; };
 		82AB2B69219E5AA200987CCB /* SkipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B68219E5AA200987CCB /* SkipError.swift */; };
 		82AB2B6B219E5B8900987CCB /* SkipError_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB2B6A219E5B8900987CCB /* SkipError_Spec.swift */; };
+		82C6B1D1222738AC00413DC3 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6B1D0222738AC00413DC3 /* Swap.swift */; };
 		82DEA54F21FD0BBA00CA6514 /* MutableActionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DEA54E21FD0BBA00CA6514 /* MutableActionProperty.swift */; };
 		915B672D101EEED88AD82137 /* Pods_ReactiveSwifty_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CFEA987BFADCE581878ED1 /* Pods_ReactiveSwifty_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		82AB2B66219E4E6000987CCB /* CombineWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineWith.swift; sourceTree = "<group>"; };
 		82AB2B68219E5AA200987CCB /* SkipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipError.swift; sourceTree = "<group>"; };
 		82AB2B6A219E5B8900987CCB /* SkipError_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipError_Spec.swift; sourceTree = "<group>"; };
+		82C6B1D0222738AC00413DC3 /* Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		82DEA54E21FD0BBA00CA6514 /* MutableActionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableActionProperty.swift; sourceTree = "<group>"; };
 		98031A09842BCE0AF7DB96FE /* Pods-ReactiveSwifty-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwifty-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwifty-iOSTests/Pods-ReactiveSwifty-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B9CFEA987BFADCE581878ED1 /* Pods_ReactiveSwifty_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwifty_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +241,7 @@
 			children = (
 				825DCF76219E5EFD00B1F103 /* Ping.swift */,
 				8267FF4721979B01000F61DA /* Toggle.swift */,
+				82C6B1D0222738AC00413DC3 /* Swap.swift */,
 			);
 			path = "Property Operators";
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				82AB2B60219E245F00987CCB /* SpaceOut.swift in Sources */,
 				8267FF3B21977759000F61DA /* Errors.swift in Sources */,
 				825DCF7D219E654800B1F103 /* Values.swift in Sources */,
+				82C6B1D1222738AC00413DC3 /* Swap.swift in Sources */,
 				8267FF2A2197597F000F61DA /* LifetimeProvider.swift in Sources */,
 				8267FF432197934B000F61DA /* Completes.swift in Sources */,
 				8267FF352197736D000F61DA /* ConcatMap.swift in Sources */,

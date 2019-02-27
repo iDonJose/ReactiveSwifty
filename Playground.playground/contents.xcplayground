@@ -6,6 +6,7 @@
         <page name='MutableActionProperty'/>
         <page name='Ping'/>
         <page name='Toggle'/>
+        <page name='Swap'/>
         <page name='CombineWithLatest'/>
         <page name='ConcatMap'/>
         <page name='FilterWithLatest'/>

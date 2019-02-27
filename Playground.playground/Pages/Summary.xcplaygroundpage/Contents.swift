@@ -20,6 +20,7 @@
  **Property Operators**
  - [`ping()`](Ping) : Pings a MutableProperty
  - [`toggle()`](Toggle) : Toggles a MutableProperty of Bool
+ - [`<> (swap)`](Swap) : Swaps a new value
 
  **Signal Operators**
  - [`combine(withLatest:)`](CombineWithLatest) : Combines value and latest value of another Signal
