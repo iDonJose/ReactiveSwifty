@@ -5,7 +5,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "ReactiveSwifty"
-    s.version      = "1.1.0"
+    s.version      = "1.2.0"
     s.summary      = "Enhances streams of values provided by ReactiveSwift"
     s.description  = <<-DESC
                         Overloads `ReactiveSwift` for better streaming of values, allowing for high productivity.
